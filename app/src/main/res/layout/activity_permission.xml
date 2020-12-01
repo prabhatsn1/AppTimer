@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/C1"
+    tools:context=".PermissionActivity">
+
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="201dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appTimerText"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:text="AppTimer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="219dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/C3"
+        android:text="@string/Permission"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/C4"
+        android:textSize="18sp"
+        app:iconTint="@color/C3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="352dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:buttonTint="@color/black"
+        android:text="@string/UPermission"
+        android:textAlignment="center"
+        android:textColor="@color/C4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTimerText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="352dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="136dp"
+        android:buttonTint="#000000"
+        android:text="@string/DPermission"
+        android:textAlignment="center"
+        android:textColor="@color/C4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTimerText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

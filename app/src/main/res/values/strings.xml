@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppTimer</string>
+    <string name="Start">Lets Get Started</string>
+    <string name="Permission">Give Permissions</string>
+    <string name="UPermission">Usage Permissions Required</string>
+    <string name="DPermission">Draw over other Apps</string>
+    <string name="Content1">This App will Help you to Control your time of usage on Mobile</string>
+</resources>
