@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val startBtn = findViewById<Button>(R.id.startButton)
+        val startBtn = findViewById<Button>(R.id.permissionButton)
         startBtn.setOnClickListener(View.OnClickListener {
             val perActivity = Intent(this,PermissionActivity::class.java)
             startActivity(perActivity)

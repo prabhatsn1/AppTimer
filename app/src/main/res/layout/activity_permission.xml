@@ -13,6 +13,7 @@
         android:layout_width="201dp"
         android:layout_height="189dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +23,7 @@
         android:id="@+id/appTimerText"
         android:layout_width="147dp"
         android:layout_height="51dp"
-        android:text="AppTimer"
+        android:text="@string/apptimer"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logoImage" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/permissionButton"
         android:layout_width="219dp"
         android:layout_height="75dp"
         android:layout_marginBottom="28dp"
@@ -47,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxUsage"
         android:layout_width="352dp"
         android:layout_height="64dp"
         android:layout_marginTop="48dp"
@@ -62,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appTimerText" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxDraw"
         android:layout_width="352dp"
         android:layout_height="64dp"
         android:layout_marginTop="136dp"
