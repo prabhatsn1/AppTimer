@@ -16,4 +16,13 @@
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="select_apps_to_monitor">Select apps to monitor</string>
+    <string name="unlock_count">Unlock Count</string>
+    <string name="most_used_app">Most Used App</string>
+    <string name="most_visited_app">Most Visited App</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="usage_time">Usage Time</string>
+    <string name="reports">Reports</string>
+    <string name="app">App</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
 </resources>
