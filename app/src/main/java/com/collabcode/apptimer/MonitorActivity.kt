@@ -7,13 +7,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.AdapterView
 import android.widget.Button
 import android.widget.ListView
 import com.collabcode.apptimer.adapters.monitorAdapter
 
-class MonitorActivity : AppCompatActivity() {
+class MonitorActivity : AppCompatActivity() , AdapterView.OnItemClickListener
+{
 
     val mList:ArrayList<AppInfo> = ArrayList()
+    val appList:ArrayList<String> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,9 @@ class MonitorActivity : AppCompatActivity() {
         listView.isNestedScrollingEnabled = true
 
         nextBtn.setOnClickListener(View.OnClickListener {
+            Log.v("Debug",appList.toString())
             val mActivity = Intent(this,Dashboard::class.java)
+            mActivity.putExtra("InfoApp",appList)
             startActivity(mActivity)
         })
         backBtn.setOnClickListener(View.OnClickListener {
@@ -37,6 +42,17 @@ class MonitorActivity : AppCompatActivity() {
         var arrayAdapter:monitorAdapter?=null
         arrayAdapter = monitorAdapter(this,mList)
         listView.adapter=arrayAdapter
+        listView.onItemClickListener = this
+    }
+    override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+
+        Log.v("Debug", " hello")
+        var items :AppInfo = parent?.adapter?.getItem(position) as AppInfo
+        var appName = items.appName
+        appList.add(items.toString())
+        Log.v("Debug", items.toString())
+        Log.v("Debug", appName)
+
     }
 
     public fun ScanningInstalled(){
@@ -48,7 +64,7 @@ class MonitorActivity : AppCompatActivity() {
                 val appVer = appinfo[i].versionName;
                 val appIcon = appinfo[i].applicationInfo.loadIcon(packageManager)
                 mList.add(AppInfo(appName,appVer,appIcon))
-                Log.v("Debug", appName )
+                //Log.v("Debug", appName )
 
             }
         }
