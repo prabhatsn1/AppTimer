@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/p4" />
 
     </LinearLayout>
 
@@ -120,7 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/p1" />
 
     </LinearLayout>
 
@@ -149,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/p2" />
 
     </LinearLayout>
 
@@ -177,7 +177,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/p3" />
 
     </LinearLayout>
 
